@@ -7,7 +7,7 @@
 
 ## Whiteboard Process
 
-![White Board](./assests/whiteboard1.jpg)
+![White Board](./assests/whiteboard.png)
 
 ## Approach & Efficiency
 
