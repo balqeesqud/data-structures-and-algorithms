@@ -28,3 +28,6 @@ center while continuing to swap elements until we reach the middle of the array.
    1. cd java-challenges.
    2. javac ArrayReverse.
    3. java ArrayReverse.
+
+   ![Example Output](./assests/java-output.png)
+
