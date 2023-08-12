@@ -33,4 +33,4 @@ and works well for arrays of different sizes.
    3. java insertShift.
    
 
-   ![Example Output](./assets/example-cc2.png)
+   ![Example Output](../java-challenges-cc3/assets/cc3output.png)
