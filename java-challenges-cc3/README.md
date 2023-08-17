@@ -1,10 +1,12 @@
 # Binary Search
+This coding challenge involves creating a "whiteboard only" solution.
+I wrote a function called BinarySearch which takes in 2 parameters: a sorted array and the search key and return the the index of the array’s element that is equal to the value of the search key, or -1 if the element is not in the array.
 
 
 
 ## Whiteboard Process
 
-![White Board](../java-challenges-cc3/assets/whitboardcc3.png)
+![White Board](../java-challenges-cc3/assets/cc3whiteboardfinaaal.png)
 
 ## Approach & Efficiency
 
@@ -18,7 +20,7 @@ the key within the array.
 
 ```
 
-## Big O Analysis
+#### Big O Analysis
 
 - **time complexity:** 
 O(log n) due to the division of search space in each iteration.
