@@ -8,4 +8,7 @@ public class Node {
         this.value = value;  // Set the value when creating a new Node
         this.nextNode = null; // Initially, there's no next Node
     }
+
+
+
 }
