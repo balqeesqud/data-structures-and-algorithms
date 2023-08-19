@@ -15,15 +15,12 @@ public class App {
         list.insert(7);
         list.insert(10);
 
-        Node current = list.head;
-        while (current != null) {
-            System.out.print(current.value + " -> ");
-            current = current.next;
-        }
-        System.out.println("NULL");
+        System.out.println("Linked List: " + list.toString());
+
+    
         System.out.println("Value 7 exists in the list: " + list.includes(7));
         System.out.println("Value 5 exists in the list: " + list.includes(5));
-        System.out.println(list.toString());
+     
     }
 
 

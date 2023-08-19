@@ -11,69 +11,61 @@ import java.util.LinkedList;
 import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
-    @Test void appHasAGreeting() {
-        App classUnderTest = new App();
-        assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
+
+    @Test
+    void testEmptyLinkedList() {
+        LinkedList emptyList = new LinkedList();
+        assertEquals("NULL", emptyList.toString());
     }
 
-    @Nested
-    class LinkedListTest {
+    @Test
+    void testInsert() {
+        LinkedList list = new LinkedList();
+        list.insert(5);
+        assertEquals("{ 5 } -> NULL", list.toString());
+    }
 
-        @Test
-        public void testInstantiateEmptyLinkedList() {
-            LinkedList list = new LinkedList();
-            assertNull(list.head);
-        }
+    @Test
+    void testHeadPointsToFirstNode() {
+        LinkedList list = new LinkedList();
+        list.insert(10);
+        list.insert(20);
+        assertEquals("{ 20 } -> { 10 } -> NULL", list.toString());
+    }
 
-        @Test
-        public void testInsertIntoLinkedList() {
-            LinkedList list = new LinkedList();
-            list.insert(10);
-            assertNotNull(list.head);
-            assertEquals(10, list.head.value);
-        }
+    @Test
+    void testInsertMultipleNodes() {
+        LinkedList list = new LinkedList();
+        list.insert(1);
+        list.insert(2);
+        list.insert(3);
+        assertEquals("{ 3 } -> { 2 } -> { 1 } -> NULL", list.toString());
+    }
 
-        @Test
-        public void testHeadPropertyPointsToFirstNode() {
-            LinkedList list = new LinkedList();
-            list.insert(5);
-            list.insert(7);
-            assertEquals(7, list.head.value);
-        }
+    @Test
+    void testIncludesExistingValue() {
+        LinkedList list = new LinkedList();
+        list.insert(5);
+        list.insert(10);
+        list.insert(15);
+        assertTrue(list.includes(10));
+    }
 
-        @Test
-        public void testInsertMultipleNodes() {
-            LinkedList list = new LinkedList();
-            list.insert(3);
-            list.insert(6);
-            list.insert(9);
-            assertEquals(9, list.head.value);
-        }
+    @Test
+    void testIncludesNonExistingValue() {
+        LinkedList list = new LinkedList();
+        list.insert(5);
+        list.insert(10);
+        list.insert(15);
+        assertFalse(list.includes(20));
+    }
 
-        @Test
-        public void testFindingExistingValue() {
-            LinkedList list = new LinkedList();
-            list.insert(2);
-            list.insert(4);
-            list.insert(6);
-            assertTrue(list.includes(4));
-        }
-
-        @Test
-        public void testFindingNonExistingValue() {
-            LinkedList list = new LinkedList();
-            list.insert(1);
-            list.insert(3);
-            list.insert(5);
-            assertFalse(list.includes(2));
-        }
-
-        @Test
-        public void testReturnAllValues() {
-            LinkedList list = new LinkedList();
-            list.insert(1);
-            list.insert(2);
-            list.insert(3);
-            assertEquals("{ 3 } -> { 2 } -> { 1 } -> NULL", list.toString());
-        }
+    @Test
+    void testToString() {
+        LinkedList list = new LinkedList();
+        list.insert(1);
+        list.insert(2);
+        list.insert(3);
+        assertEquals("{ 3 } -> { 2 } -> { 1 } -> NULL", list.toString());
+    }
 }

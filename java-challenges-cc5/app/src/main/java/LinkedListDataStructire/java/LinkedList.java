@@ -1,42 +1,32 @@
 package LinkedListDataStructire.java;
 
-import org.w3c.dom.DOMException;
-import org.w3c.dom.Node;
-
 public class LinkedList {
-    private Node head; // The head property points to the first Node in the list
+    private Node head; // Head property
 
     public LinkedList() {
-        this.head = null; // Initialize an empty linked list with no head
+        this.head = null; // An empty Linked List upon instantiation 
     }
 
+    // Method to insert a new node at the head
     public void insert(int value) {
-        Node newNode = new Node(value) {
-            @Override
-            public String getNodeName() {
-                return null;
-            }
-
-            @Override
-            public String getNodeValue() throws DOMException {
-                return null;
-            }
-        }; // Create a new Node with the given value
-        newNode.next = head; // Make the new Node point to the current head
-        head = newNode; // Set the new Node as the new head
+        Node newNode = new Node(value);
+        newNode.nextNode = head;
+        head = newNode;
     }
 
+    // Method to check if a value exists in the Linked List
     public boolean includes(int value) {
-        Node current = head; // Start from the head
+        Node current = head;
         while (current != null) {
             if (current.value == value) {
-                return true; // Found the value
+                return true;
             }
-            current = current.nextNode; // Move to the next Node
+            current = current.nextNode;
         }
-        return false; // Value not found
+        return false;
     }
 
+    // Method to convert the Linked List to a formatted string
     public String toString() {
         String result = "";
         Node current = head;
@@ -47,4 +37,19 @@ public class LinkedList {
         result += "NULL";
         return result;
     }
-}
+
+
+    }
+
+    // public static void main(String[] args) {
+    //     LinkedList list = new LinkedList();
+    //     list.insert(3);
+    //     list.insert(2);
+    //     list.insert(1);
+        
+    //     System.out.println("Linked List: " + list.toString());
+
+    //     System.out.println("Includes 2: " + list.includes(2));
+    //     System.out.println("Includes 4: " + list.includes(4));
+    // }
+
