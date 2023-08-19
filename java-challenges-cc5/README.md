@@ -8,7 +8,8 @@ of a value, and generating a formatted string representation of the linked list.
 
 
 ## Whiteboard Process
-<!-- Embedded whiteboard image -->
+![White Board](./app/src/main/resources/assets/cc5whiteboard.png)
+
 
 ## Approach & Efficiency
 
