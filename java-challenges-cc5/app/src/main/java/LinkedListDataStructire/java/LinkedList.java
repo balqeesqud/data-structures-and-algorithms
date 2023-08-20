@@ -41,15 +41,4 @@ public class LinkedList {
 
     }
 
-    // public static void main(String[] args) {
-    //     LinkedList list = new LinkedList();
-    //     list.insert(3);
-    //     list.insert(2);
-    //     list.insert(1);
-        
-    //     System.out.println("Linked List: " + list.toString());
-
-    //     System.out.println("Includes 2: " + list.includes(2));
-    //     System.out.println("Includes 4: " + list.includes(4));
-    // }
 
