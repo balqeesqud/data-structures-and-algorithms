@@ -16,8 +16,7 @@ The insertShiftArray function takes an array and a value to insert. It puts the 
 and works well for arrays of different sizes.
 
 ```
-
-## Big O Analysis
+#### Big O Analysis
 
 - **time complexity:** of O(n), where n is the length of the input array. This is because the function
     goes through the array twice: once to copy elements before the middle index and once to copy elements
