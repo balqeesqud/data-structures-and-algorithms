@@ -1,5 +1,4 @@
-
-
+package challenges.cc6;
 
 import LinkedListDataStructire.java.LinkedList;
 
@@ -18,24 +17,24 @@ public class App {
         System.out.println("Value 5 exists in the list: " + list.includes(5));
 
         // append
-
-        linkedList.append("X");
-        linkedList.append("Y");
-        linkedList.append("Z");
+        LinkedList linkedList = new LinkedList();
+        linkedList.append(3);
+        linkedList.append(7);
+        linkedList.append(5);
     
-        System.out.println("After append:");
-        printLinkedList(linkedList);
+        System.out.println("After append:" + linkedList);
+
 
         // insertBefore
 
-        linkedList.insertBefore("Y", "W");
-        System.out.println("After insert before 'Y':");
-        printLinkedList(linkedList); 
+        linkedList.insertBefore(7, 10);
+        System.out.println("After insert before 7 :" + linkedList);
+
      
         // insertAfter
 
-        linkedList.insertAfter("W", "V");
-        System.out.println("After insert after 'W':");
-        printLinkedList(linkedList); // 
+        linkedList.insertAfter(10, 50);
+        System.out.println("After insert after 10:" + linkedList);
+
     }
 }

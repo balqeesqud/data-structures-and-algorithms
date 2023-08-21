@@ -1,9 +1,11 @@
-package java.challenges.cc5;
+package challenges.cc6;
 
+import LinkedListDataStructire.java.LinkedList;
+import LinkedListDataStructire.java.Node;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
-import java.util.LinkedList;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -67,15 +69,12 @@ class AppTest {
     }
 
 
-    @BeforeEach
-    public void setUp() {
-        linkedList = new LinkedList();
-    }
+    LinkedList linkedList = new LinkedList();
 
     @Test
     public void testAppendSingleNode() {
         linkedList.append(5);
-        assertEquals(5, linkedList.head.data);
+        assertEquals(5, linkedList.head.value);
         assertNull(linkedList.head.next);
     }
 
@@ -86,11 +85,11 @@ class AppTest {
         linkedList.append(15);
 
         Node current = linkedList.head;
-        assertEquals(5, current.data);
+        assertEquals(5, current.value);
         current = current.next;
-        assertEquals(10, current.data);
+        assertEquals(10, current.value);
         current = current.next;
-        assertEquals(15, current.data);
+        assertEquals(15, current.value);
         assertNull(current.next);
     }
 
@@ -103,13 +102,13 @@ class AppTest {
         linkedList.insertBefore(10, 12);
 
         Node current = linkedList.head;
-        assertEquals(5, current.data);
+        assertEquals(5, current.value);
         current = current.next;
-        assertEquals(12, current.data);
+        assertEquals(12, current.value);
         current = current.next;
-        assertEquals(10, current.data);
+        assertEquals(10, current.value);
         current = current.next;
-        assertEquals(15, current.data);
+        assertEquals(15, current.value);
         assertNull(current.next);
     }
 
@@ -121,11 +120,11 @@ class AppTest {
         linkedList.insertBefore(10, 5);
 
         Node current = linkedList.head;
-        assertEquals(5, current.data);
+        assertEquals(5, current.value);
         current = current.next;
-        assertEquals(10, current.data);
+        assertEquals(10, current.value);
         current = current.next;
-        assertEquals(15, current.data);
+        assertEquals(15, current.value);
         assertNull(current.next);
     }
 
@@ -138,13 +137,13 @@ class AppTest {
         linkedList.insertAfter(10, 12);
 
         Node current = linkedList.head;
-        assertEquals(5, current.data);
+        assertEquals(5, current.value);
         current = current.next;
-        assertEquals(10, current.data);
+        assertEquals(10, current.value);
         current = current.next;
-        assertEquals(12, current.data);
+        assertEquals(12, current.value);
         current = current.next;
-        assertEquals(15, current.data);
+        assertEquals(15, current.value);
         assertNull(current.next);
     }
 
@@ -156,11 +155,11 @@ class AppTest {
         linkedList.insertAfter(10, 15);
 
         Node current = linkedList.head;
-        assertEquals(5, current.data);
+        assertEquals(5, current.value);
         current = current.next;
-        assertEquals(10, current.data);
+        assertEquals(10, current.value);
         current = current.next;
-        assertEquals(15, current.data);
+        assertEquals(15, current.value);
         assertNull(current.next);
     }
 }

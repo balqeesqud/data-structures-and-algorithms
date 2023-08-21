@@ -1,7 +1,7 @@
 package LinkedListDataStructire.java;
 
 public class LinkedList {
-    private Node head; // Head property
+    public Node head; // Head property
 
     public LinkedList() {
         this.head = null; // An empty Linked List upon instantiation 
@@ -10,7 +10,7 @@ public class LinkedList {
     // Method to insert a new node at the head
     public void insert(int value) {
         Node newNode = new Node(value);
-        newNode.nextNode = head;
+        newNode.next = head;
         head = newNode;
     }
 
@@ -21,7 +21,7 @@ public class LinkedList {
             if (current.value == value) {
                 return true;
             }
-            current = current.nextNode;
+            current = current.next;
         }
         return false;
     }
@@ -32,7 +32,7 @@ public class LinkedList {
         Node current = head;
         while (current != null) {
             result += "{ " + current.value + " } -> ";
-            current = current.nextNode;
+            current = current.next;
         }
         result += "NULL";
         return result;
@@ -56,13 +56,13 @@ public class LinkedList {
         if (head == null) {
             return;
         }
-        if (head.data == value) {
+        if (head.value == value) {
             newNode.next = head;
             head = newNode;
             return;
         }
         Node current = head;
-        while (current.next != null && current.next.data != value) {
+        while (current.next != null && current.next.value != value) {
             current = current.next;
         }
         if (current.next != null) {
@@ -76,7 +76,7 @@ public class LinkedList {
             return;
         }
         Node current = head;
-        while (current != null && current.data != value) {
+        while (current != null && current.value != value) {
             current = current.next;
         }
         if (current != null) {

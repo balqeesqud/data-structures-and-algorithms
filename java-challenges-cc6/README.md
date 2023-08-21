@@ -43,3 +43,5 @@ but for large lists or frequent insertions, other data structures or optimizatio
    2. javac App.java .
    3. java App. 
 
+![Output](./app/src/main/resources/cc6output.png)
+
