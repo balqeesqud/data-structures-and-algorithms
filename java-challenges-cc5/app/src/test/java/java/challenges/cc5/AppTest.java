@@ -3,11 +3,8 @@
  */
 package java.challenges.cc5;
 
-import org.junit.jupiter.api.Nested;
+import LinkedListDataStructire.java.LinkedList;
 import org.junit.jupiter.api.Test;
-
-import java.util.LinkedList;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
