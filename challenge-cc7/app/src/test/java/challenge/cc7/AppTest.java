@@ -1,4 +1,4 @@
-package challenge.cc6;
+package challenge.cc7;
 
 import LinkedListDataStructure.LinkedList;
 import LinkedListDataStructure.Node;
@@ -191,7 +191,7 @@ class AppTest {
             fail("Expected IllegalArgumentException to be thrown");
         } catch (IllegalArgumentException e) {
             System.out.println(e);        }
-        }
+    }
 
 
     @Test

@@ -1,4 +1,4 @@
-package challenge.cc6;
+package challenge.cc7;
 
 
 import LinkedListDataStructure.LinkedList;
@@ -60,4 +60,4 @@ public class App {
         }
     }
 
-    }
+}
