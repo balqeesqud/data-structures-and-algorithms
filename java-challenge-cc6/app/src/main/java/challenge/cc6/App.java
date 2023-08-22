@@ -37,5 +37,27 @@ public class App {
         linkedList.insertAfter(10, 50);
         System.out.println("After insert after 10:" + linkedList);
 
+
+
+
+        //====================================
+
+        LinkedList ll = new LinkedList();
+
+        ll.append(1);
+        ll.append(3);
+        ll.append(8);
+        ll.append(2);
+
+
+        System.out.println("Linked list ll = " + ll);
+        int k = 2;
+        try {
+            int result = ll.kthFromEnd(k);
+            System.out.println("Value at kth position from end: " + result);
+        } catch (IllegalArgumentException e) {
+            System.out.println(e);
+        }
     }
-}
+
+    }

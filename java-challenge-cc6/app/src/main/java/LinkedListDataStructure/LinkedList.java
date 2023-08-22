@@ -84,6 +84,35 @@ public class LinkedList {
             current.next = newNode;
         }
     }
+
+    //========================================================
+    public int kthFromEnd(int k) {
+        if (head == null || k < 0) {
+            throw new IllegalArgumentException("Invalid input");
+        }
+
+        Node forward = head;
+        Node backward = head;
+
+        // Moving 'forward' pointer k nodes ahead
+        for (int i = 0; i <= k; i++) {
+            if (forward == null) {
+                throw new IllegalArgumentException("Value of k is greater than the length of the list");
+            }
+            forward = forward.next;
+        }
+
+        // Moving both pointers until 'forward' reaches the end
+        while (forward!= null) {
+            forward = forward.next;
+            backward = backward.next;
+        }
+
+        // 'backward' is now k nodes from the end
+        return backward.value;
+
+
+    }
 }
 
 

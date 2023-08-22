@@ -162,6 +162,82 @@ class AppTest {
         assertEquals(15, current.value);
         assertNull(current.next);
     }
+
+    //===========================================
+
+    @Test
+    public void testKGreaterThanListLength() {
+        LinkedList ll = new LinkedList();
+        ll.append(1);
+        ll.append(3);
+        ll.append(8);
+
+        try {
+            ll.kthFromEnd(4);
+            fail("Expected IllegalArgumentException to be thrown");
+        } catch (IllegalArgumentException e) {
+            System.out.println(e);        }
+    }
+
+    @Test
+    public void testKEqualsListLength() {
+        LinkedList ll = new LinkedList();
+        ll.append(1);
+        ll.append(3);
+        ll.append(8);
+
+        try {
+            ll.kthFromEnd(3);
+            fail("Expected IllegalArgumentException to be thrown");
+        } catch (IllegalArgumentException e) {
+            System.out.println(e);        }
+        }
+
+
+    @Test
+    public void testKNegative() {
+        LinkedList ll = new LinkedList();
+        ll.append(1);
+        ll.append(3);
+        ll.append(8);
+
+        try {
+            ll.kthFromEnd(-2);
+            fail("Expected IllegalArgumentException to be thrown");
+        } catch (IllegalArgumentException e) {
+            System.out.println(e);
+        }
+    }
+
+    @Test
+    public void testSingleElementList() {
+        LinkedList ll = new LinkedList();
+        ll.append(5);
+
+        assertEquals(5, ll.kthFromEnd(0));
+    }
+
+    @Test
+    public void testMiddleElement() {
+        LinkedList ll = new LinkedList();
+        ll.append(1);
+        ll.append(3);
+        ll.append(8);
+        ll.append(2);
+
+        assertEquals(3, ll.kthFromEnd(2));
+    }
+
+    @Test
+    public void testHappyPath() {
+        LinkedList ll = new LinkedList();
+        ll.append(1);
+        ll.append(3);
+        ll.append(8);
+        ll.append(2);
+
+        assertEquals(8, ll.kthFromEnd(1));
+    }
 }
 
 
