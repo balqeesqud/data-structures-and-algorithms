@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a574d80f-f62c-4ba7-ba88-819d222213ff" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../challenge-cc10/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../challenge-cc10/app/src/main/java/LinkedListDataStructure/LinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../challenge-cc10/app/src/main/java/LinkedListDataStructure/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../challenge-cc10/app/src/main/java/LinkedListDataStructure/queue/Node" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../challenge-cc10/app/src/main/java/LinkedListDataStructure/queue/Queue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../challenge-cc10/app/src/main/java/LinkedListDataStructure/stack/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../challenge-cc10/app/src/main/java/LinkedListDataStructure/stack/Stack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
