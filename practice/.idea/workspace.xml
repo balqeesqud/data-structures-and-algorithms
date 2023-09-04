@@ -5,6 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a574d80f-f62c-4ba7-ba88-819d222213ff" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../challenge-cc11/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../challenge-cc11/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../challenge-cc11/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../challenge-cc11/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../challenge-cc11/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../challenge-cc11/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../challenge-cc11/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../challenge-cc11/app/src/main/java/LinkedListDataStructure/linkedlist/linkedlist/LinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../challenge-cc11/app/src/main/java/LinkedListDataStructure/linkedlist/linkedlist/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../challenge-cc11/app/src/main/java/LinkedListDataStructure/linkedlist/queue/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../challenge-cc11/app/src/main/java/LinkedListDataStructure/linkedlist/queue/PseudoQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../challenge-cc11/app/src/main/java/LinkedListDataStructure/linkedlist/queue/Queue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../challenge-cc11/app/src/main/java/LinkedListDataStructure/linkedlist/stack/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../challenge-cc11/app/src/main/java/LinkedListDataStructure/linkedlist/stack/Stack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../challenge-cc11/app/src/main/resources/cc11output.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../challenge-cc11/app/src/main/resources/cc11whiteboard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -40,7 +57,7 @@
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "stack-and-queue",
+    "git-widget-placeholder": "stack-queue-pseudo",
     "last_opened_file_path": "/home/akmz/Desktop/balqees-dev/data-structures-and-algorithms/practice/src/Quotes",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.0",
