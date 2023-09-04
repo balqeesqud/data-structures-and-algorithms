@@ -4,11 +4,16 @@
 package challenge.cc11;
 
 public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+
+        AnimalShelter shelter = new AnimalShelter();
+
+        shelter.enqueue("dog", "Buddy");
+        shelter.enqueue("cat", "Whiskers");
+        shelter.enqueue("dog", "Max");
+
+        System.out.println(shelter.dequeue("dog").getName());
+        System.out.println(shelter.dequeue("cat").getName());
     }
 }
