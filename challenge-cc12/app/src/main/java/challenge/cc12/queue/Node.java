@@ -1,4 +1,4 @@
-package challenge.cc11.queue;
+package challenge.cc12.queue;
 
 public class Node {
     String value;
