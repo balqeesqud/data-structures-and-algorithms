@@ -1,14 +1,14 @@
-package challenge.cc11.queue;
+package LinkedListDataStructure.linkedlist.queue;
 
-public class Node {
-    String value;
-    Node next;
+public class Node<T>{
+    T value;
+    Node<T> next;
 
-    public Node (String value) {
+    public Node(T value) {
         this.value = value;
     }
 
-    @Override
+    @java.lang.Override
     public String toString() {
         return "Node{" +
                 "value=" + value +

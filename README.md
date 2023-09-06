@@ -12,7 +12,8 @@
 | Class 07   | [Linked List Kth](challenge-cc7/README.md)               |
 | Class 08   | [Linked List Zip](challenge-cc8/README.md)               |
 | Class 10   | [Queue & Stack](challenge-cc10/README.md)                |
-| Class 11   | [Queue & Stack Animal Shelter](challenge-cc12/README.md) |
-| Class 11   | [Queue & Stack Pseudo](challenge-cc12/README.md)         |
+| Class 11   | [Queue & Stack Pseudo ](challenge-cc11/README.md)        |
+| Class 12   | [Queue & Stack animal shelter](challenge-cc12/README.md) |
+
 
 

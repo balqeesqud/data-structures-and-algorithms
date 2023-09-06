@@ -1,4 +1,4 @@
-package challenge.cc11;
+package challenge.cc12;
 
 
 import java.util.LinkedList;
