@@ -14,6 +14,7 @@ It provides the following functionality:
 
 ## WhiteBoard 
 
-
+![Whiteboard](app/src/main/resources/cc12whiteboard.png)
 
 ## Solution 
+![Output](app/src/main/resources/cc12output.png)
