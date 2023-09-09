@@ -7,8 +7,53 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
-    @Test void appHasAGreeting() {
-        App classUnderTest = new App();
-        assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
+    @Test
+    public void testBalancedBrackets1() {
+        assertTrue(BracketsValidator.validateBrackets("{}"));
+    }
+
+    @Test
+    public void testBalancedBrackets2() {
+        assertTrue(BracketsValidator.validateBrackets("{}(){}"));
+    }
+
+    @Test
+    public void testNestedBalancedBrackets() {
+        assertTrue(BracketsValidator.validateBrackets("({[()]})"));
+    }
+
+    @Test
+    public void testUnbalancedOpeningBracket() {
+        assertFalse(BracketsValidator.validateBrackets("{{[()]})"));
+    }
+
+    @Test
+    public void testUnbalancedClosingBracket() {
+        assertFalse(BracketsValidator.validateBrackets("({[()])}"));
+    }
+
+    @Test
+    public void testMismatchedBrackets() {
+        assertFalse(BracketsValidator.validateBrackets("({[}])"));
+    }
+
+    @Test
+    public void testEmptyString() {
+        assertTrue(BracketsValidator.validateBrackets(""));
+    }
+
+    @Test
+    public void testSingleBracket() {
+        assertFalse(BracketsValidator.validateBrackets("("));
+    }
+
+    @Test
+    public void testMixedTextAndBrackets() {
+        assertTrue(BracketsValidator.validateBrackets("Hello [World]!"));
+    }
+
+    @Test
+    public void testNoBrackets() {
+        assertTrue(BracketsValidator.validateBrackets("No brackets here"));
     }
 }
