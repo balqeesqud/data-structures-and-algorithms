@@ -14,7 +14,7 @@
 | Class 10   | [Queue & Stack](challenge-cc10/README.md)                |
 | Class 11   | [Queue & Stack Pseudo ](challenge-cc11/README.md)        |
 | Class 12   | [Queue & Stack animal shelter](challenge-cc12/README.md) |
-| Class 13   | [Queue & Stack brackets](challenge-cc12/README.md)       |
+| Class 13   | [Queue & Stack brackets](challenge-cc13/README.md)       |
 
 
 
