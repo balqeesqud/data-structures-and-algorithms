@@ -11,14 +11,16 @@ closing brackets with the stack's top element. If a mismatch is detected or if a
 preceding opening bracket, the function returns false. After processing all characters, if the stack is empty, 
 indicating balanced brackets, the function returns true.
 
-- Time Complexity: O(n), where n is the length of the input string. The algorithm iterates through the string once.
+- Time Complexity: O(n), where n is the length of the input string. Runtime grows linearly with the size of the input 
+                   string. It provides an efficient way to validate brackets regardless of the string's length.
 
-- Space Complexity: O(n), in the worst case, when all opening brackets are present and not matched.
+- Space Complexity: O(n),  indicates that the algorithm's memory usage grows linearly with the size of the input string,
+                    primarily due to the space required for the stack data structure.
 
 
 ## WhiteBoard
 
-![Whiteboard](app/src/main/resources/cc12whiteboardnew.png)
+![Whiteboard](app/src/main/resources/cc13whiteboard.png)
 
 ## Solution
 ![Output](app/src/main/resources/cc13output.png)
