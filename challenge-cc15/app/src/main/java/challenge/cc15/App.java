@@ -3,12 +3,28 @@
  */
 package challenge.cc15;
 
-public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
+import DataStructures.tree.BinarySearchTree;
+import DataStructures.tree.BinaryTree;
+import DataStructures.tree.Node;
 
+public class App {
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        BinarySearchTree tree = new BinarySearchTree();
+        tree.add(5);
+        tree.add(3);
+        tree.add(8);
+        tree.add(1);
+        tree.add(4);
+        tree.add(7);
+        tree.add(9);
+
+        System.out.println("Contains 4: " + tree.contains(4));
+        System.out.println("Contains 6: " + tree.contains(6));
+
+
+        System.out.println("Preorder Traversal: " + tree.preorder());
+        System.out.println("Inorder Traversal: " + tree.inorder());
+        System.out.println("Postorder Traversal: " + tree.postorder());
     }
 }
+
