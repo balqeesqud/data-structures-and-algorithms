@@ -18,6 +18,8 @@
 | Class 15     | [Binary Tree and BST Implementation](challenge-cc15/README.md) |
 | Class 16     | [findMaximumValue](challenge-cc16/README.md)                   |
 | Class 17     | [tree-breadth-first](challenge-cc17/README.md)                 |
+| Class 17     | [tree-fizz-buzz](challenge-cc18/README.md)                     |
+
 
 
 
