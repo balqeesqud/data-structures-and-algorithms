@@ -10,6 +10,11 @@ In the context of FizzBuzz, we transform the values in the tree as follows:
 This task aims to transform the numeric values in the tree into corresponding FizzBuzz strings while preserving the
 tree's structure.
 
+
+## WhiteBoard
+![White Board](app/src/main/resources/cc18whiteboard.png)
+
+
 ## Approach & Efficiency 
 
 - **Approach** 
@@ -36,7 +41,6 @@ and traverse the entire tree structure, processing each node along the way.
   depth equal to the height of the tree, which is O(N) for an unbalanced tree.
 
 
-## WhiteBoard
 
 ## Solution 
 ![Output](app/src/main/resources/cc18output.png)
