@@ -28,7 +28,7 @@ return sorted
 
 # Trace
 
- **Sample Array:**[8, 4, 23, 42, 16, 15]
+ **Sample Array:**[8,4,23,42,16,15]
 
  | Iteration | Sorted Array       | Current Element | Action                              |
  |-----------|--------------------|-----------------|-------------------------------------|
