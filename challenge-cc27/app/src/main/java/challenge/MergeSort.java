@@ -10,8 +10,12 @@ public class MergeSort {
             int[] right = new int[n - mid];
 
             // Copy data to left and right sub-arrays
-            System.arraycopy(arr, 0, left, 0, mid);
-            System.arraycopy(arr, mid, right, 0, n - mid);
+            for (int i = 0; i < mid; i++) {   //  first loop copies the elements for the left array,
+                left[i] = arr[i];
+            }
+            for (int i = mid; i < n; i++) {   // second loop copies the elements for the right array
+                right[i - mid] = arr[i];
+            }
 
             // Recursive sorting
             mergeSort(left);
