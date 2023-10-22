@@ -3,12 +3,40 @@
  */
 package challenge.cc28;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
+
 class AppTest {
-    @Test void appHasAGreeting() {
-        App classUnderTest = new App();
-        assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
+    @Test
+    public void testSortByYear() {
+        Movie[] movies = {
+                             // title      // year    // array of strings og genres
+                new Movie("The Matrix", 1999, new String[]{"Action", "Sci-Fi"}),
+                new Movie("Avatar", 2009, new String[]{"Action", "Adventure", "Sci-Fi"}),
+                new Movie("Inception", 2010, new String[]{"Action", "Sci-Fi"})
+        };
+
+        MovieSorter.sortByYear(movies);
+
+        Assertions.assertEquals("Inception", movies[0].getTitle());
+        Assertions.assertEquals("Avatar", movies[1].getTitle());
+        Assertions.assertEquals("The Matrix", movies[2].getTitle());
+    }
+
+    @Test
+    public void testSortAlphabeticallyByTitle() {
+        Movie[] movies = {
+                new Movie("The Dark Knight", 2008, new String[]{"Action", "Crime", "Drama"}),
+                new Movie("Inception", 2010, new String[]{"Action", "Adventure", "Sci-Fi"}),
+                new Movie("A Beautiful Mind", 2001, new String[]{"Biography", "Drama"})
+        };
+
+        MovieSorter.sortAlphabeticallyByTitle(movies);
+
+        Assertions.assertEquals("A Beautiful Mind", movies[0].getTitle());
+        Assertions.assertEquals("Inception", movies[2].getTitle());
+        Assertions.assertEquals("The Dark Knight", movies[1].getTitle());
     }
 }
