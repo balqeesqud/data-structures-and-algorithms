@@ -21,6 +21,8 @@
 | Class 18   | [tree-fizz-buzz](challenge-cc18/README.md)                      |
 | Class 26   | [Insertion sort ](challenge-cc26/README.md)                     |
 | Class 27   | [Merge sort ](challenge-cc27/README.md)                         |
+| Class 28   | [Sorting: Comparisons ](challenge-cc28/README.md)               |
+
 
 
 
