@@ -23,7 +23,9 @@
 | Class 27   | [Merge sort ](challenge-cc27/README.md)                        |
 | Class 28   | [Sorting: Comparisons ](challenge-cc28/README.md)              |
 | Class 30   | [ Implementation: Hash Tables ](challenge-cc30/README.md)      |
-| Class 31   | [  Repeated Word HashMap ](challenge-cc30/README.md)           |
+| Class 31   | [  Repeated Word HashMap ](challenge-cc31/README.md)           |
+| Class 32   | [ tree-intersection ](challenge-cc32/README.md)                |
+
 
 
 
