@@ -3,12 +3,74 @@
  */
 package challenge.cc32;
 
+import challenge.cc32.TreeIntersection.BinaryTree;
+import challenge.cc32.TreeIntersection.Node;
+import challenge.cc32.TreeIntersection.TreeIntersection;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import java.util.HashSet;
+import java.util.Set;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
-    @Test void appHasAGreeting() {
-        App classUnderTest = new App();
-        assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
+
+    private TreeIntersection treeIntersection;
+
+    @BeforeEach
+    public void setup() {
+        treeIntersection = new TreeIntersection();
     }
+
+    @Test
+    public void testPopulateValueSet() {
+        BinaryTree tree = new BinaryTree();
+        Node root = new Node(5);
+        root.setLeft(new Node(3));
+        root.setRight(new Node(8));
+        tree.setRoot(root);
+
+        Set<Integer> valueSet = new HashSet<>();
+        treeIntersection.populateValueSet(tree.getRoot(), valueSet);
+
+        assertEquals(3, valueSet.size());
+        assertTrue(valueSet.contains(5));
+        assertTrue(valueSet.contains(3));
+        assertTrue(valueSet.contains(8));
+    }
+
+    @Test
+    public void testTreeIntersectionEmptyTrees() {
+        BinaryTree tree1 = new BinaryTree();
+        BinaryTree tree2 = new BinaryTree();
+
+        Set<Integer> commonValues = treeIntersection.tree_intersection(tree1, tree2);
+
+        assertTrue(commonValues.isEmpty());
+    }
+
+    @Test
+    public void testTreeIntersectionCommonValues() {
+        BinaryTree tree1 = new BinaryTree();
+        BinaryTree tree2 = new BinaryTree();
+
+        Node root1 = new Node(5);
+        root1.setLeft(new Node(3));
+        root1.setRight(new Node(8));
+        tree1.setRoot(root1);
+
+        Node root2 = new Node(5);
+        root2.setLeft(new Node(2));
+        root2.setRight(new Node(8));
+        tree2.setRoot(root2);
+
+        Set<Integer> commonValues = TreeIntersection.tree_intersection(tree1, tree2);
+
+        assertEquals(2, commonValues.size());
+        assertTrue(commonValues.contains(5));
+        assertTrue(commonValues.contains(8));
+    }
+
+
 }
