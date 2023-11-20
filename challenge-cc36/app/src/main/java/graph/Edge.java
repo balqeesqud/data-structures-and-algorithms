@@ -22,4 +22,16 @@ public class Edge {
                 ", weight=" + weight +
                 '}';
     }
+
+    public Vertex getSource() {
+        return source;
+    }
+
+    public Vertex getDestination() {
+        return destination;
+    }
+
+    public int getWeight() {
+        return weight;
+    }
 }
