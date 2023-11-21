@@ -28,6 +28,8 @@
 | Class 33   | [ Left-Joins ](challenge-cc33/README.md)                                      |
 | Class 35   | [ Graph Implementation ](challenge-cc35/README.md)                            |
 | Class 36   | [ Implement a breadth-first traversal on a graph. ](challenge-cc36/README.md) |
+| Class 37   | [business-trip ](challenge-cc37/README.md)                                    |
+
 
 
 
