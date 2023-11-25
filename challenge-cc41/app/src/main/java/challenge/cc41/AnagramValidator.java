@@ -6,7 +6,7 @@ import java.util.Map;
 public class AnagramValidator {
 
     public static boolean areAnagrams(String s1, String s2) {
-        // Remove spaces and convert to lowercase for case-insensitive comparison
+        // Removing spaces and convert to lowercase for case-insensitive comparison
         s1 = s1.replaceAll("\\s", "").toLowerCase();
         s2 = s2.replaceAll("\\s", "").toLowerCase();
 
@@ -15,7 +15,7 @@ public class AnagramValidator {
             return false;
         }
 
-        // Use a map to count occurrences of each character in the first string
+        // Used a map to count occurrences of each character in the first string
         Map<Character, Integer> charCountMap = new HashMap<>();
 
         // Count occurrences in the first string
