@@ -1,4 +1,4 @@
-# 
+# isConnected
 Write a function that accepts as input two nodes and a graph, represented as an adjacency list.
 Should traverse the graph, using any traversal method.
 The traversal should start at one node, and continue until the second node is found, or the traversal is completed.
